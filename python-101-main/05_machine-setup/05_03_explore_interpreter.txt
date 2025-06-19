@@ -2,8 +2,31 @@ Explore the interpreter:
 
 - Execute lines with syntax error and see what the response is.
   - What happens if you leave out a quotation or parenthesis?
+
+    print("hello)          -->   SyntaxError: unterminated string literal (detected at line 1)
+    print("hello world"    -->   SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+
   - How helpful are the error messages?
+
+    Not extremely precise but indicates the line where the error occurs and it's nature.
+ 
 
 - Use the `help()` function to explore what you can do with the interpreter.
   - For example execute `help('print')`.
+        Help on built-in function print in module builtins:
+
+        print(*args, sep=' ', end='\n', file=None, flush=False)
+            Prints the values to a stream, or to sys.stdout by default.
+
+            sep
+              string inserted between values, default a space.
+            end
+              string appended after the last value, default a newline.
+            file
+              a file-like object (stream); defaults to the current sys.stdout.
+            flush
+              whether to forcibly flush the stream.
+
   - Press `q` to exit.
+    exit()    ---> q didn't work
