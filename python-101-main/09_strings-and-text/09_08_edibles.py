@@ -6,3 +6,8 @@
 # What dish can you make from these ingredients? :)
 
 s = "They grappled with their leggins before going to see the buttercups flourish."
+
+print(s[-9:-4])
+print(s[28:31])
+print(s[-20:-14])
+print(s[5:9]+s[2])
